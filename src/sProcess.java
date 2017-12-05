@@ -5,6 +5,7 @@ public class sProcess {
   public int ionext;
   public int numblocked;
   public int ticketsnum;
+  public int next;
 
   public sProcess (int cputime, int ioblocking, int cpudone, int ionext, int numblocked, int numberOfTickets) {
     this.cputime = cputime;
@@ -13,5 +14,6 @@ public class sProcess {
     this.ionext = ionext;
     this.numblocked = numblocked;
     this.ticketsnum = numberOfTickets;
+    this.next = 0;
   } 	
 }
